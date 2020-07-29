@@ -1,3 +1,23 @@
+# Usage
+
+Install Hugo
+
+```bash
+brew install hugo
+```
+
+Clone repository and submodules (Hugo theme)
+
+```bash
+git clone --recurse-submodules https://github.com/Alan-Cha/hugo-iter8-docs.git
+```
+
+Host locally
+
+```bash
+hugo serve
+```
+
 # File structure
 
 * [content/](./content/): Contains all the Markdown files, which will be used to generate the documentation
