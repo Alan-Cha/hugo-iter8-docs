@@ -15,8 +15,11 @@ git clone --recurse-submodules https://github.com/Alan-Cha/hugo-iter8-docs.git
 Host locally
 
 ```bash
+cd hugo-iter8-docs
 hugo serve
 ```
+
+By default, Hugo will use [localhost:1313](localhost:1313).
 
 # File structure
 
