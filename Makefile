@@ -10,4 +10,4 @@ docs-baseURL: ## Build the site with the base URL
 	hugo -b $(baseURL) -d public --gc --minify --cleanDestinationDir && make copy-archive
 
 copy-archive: ## Copies archive into public
-	ls && mkdir public/archive/ && cp -r archive/ public/archive/ && ls
+	ls && mkdir public/archive/ && cp -r archive/ public/ && ls
