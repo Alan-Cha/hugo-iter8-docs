@@ -2,6 +2,7 @@
 date: 2016-04-09T16:50:16+02:00
 title: About
 weight: 10
+summary: Learn more about iter8
 ---
 
 ![iter8pic](/images/iter8pic.png)

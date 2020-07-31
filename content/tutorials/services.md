@@ -3,6 +3,7 @@ date: 2016-04-09T16:50:16+02:00
 menuTitle: Services
 title: Automated Canary Rollout Using Services
 weight: 20
+summary: Perform a canary rollout when different versions have different service names
 ---
 
 In iter8 the versions of a service being compared can be specified using deployment names or using service names. Other [tutorials](iter8_bookinfo_istio.md) showed how to specify different versions using Kubernetes deployment names. In this tutorial, we learn how to do a canary rollout of an application when different versions are indicated by different Kubernetes service names.

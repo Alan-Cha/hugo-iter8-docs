@@ -1,15 +1,99 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Robust analytics and control to unleash cloud-native continuous experimentation. </title>
+    <title>iter8 Documentation</title>
     <link>/</link>
-    <description>Recent content on Robust analytics and control to unleash cloud-native continuous experimentation. </description>
+    <description>Recent content on iter8 Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>/introduction/about/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/introduction/about/</guid>
+      <description>Iter8 enables statistically robust continuous experimentation of microservices in your CI/CD pipelines. Use iter8&amp;rsquo;s to safely expose competing versions of a microservice within your distributed cloud application to application traffic, gather in-depth insights about key performance and business metrics associated with these versions, and intelligently rollout the best version of your service using an iter8 experiment.
+Iter8 supports an expressive model of cloud experimentation for a variety of CI/CD scenarios. With iter8, you can:</description>
+    </item>
+    
+    <item>
+      <title>Automated canary releases with iter8 on Kubernetes and Istio</title>
+      <link>/tutorials/deployments/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/tutorials/deployments/</guid>
+      <description>This tutorial shows you how iter8 can be used to perform canary releases by gradually shifting traffic to a canary version of a microservice.
+This tutorial has 5 parts, which are supposed to be tried in order. Here you will learn:
+ how to perform a canary rollout with iter8; how to set different success criteria for iter8 to analyze canary releases and determine success or failure; how to have iter8 immediately stop an experiment as soon as a criterion is not met; how to use your own custom metrics in success criteria for canary analyses; and how iter8 can be used for canary releases of both internal and user-facing services.</description>
+    </item>
+    
+    <item>
+      <title>Iter8 on Kubernetes and Istio</title>
+      <link>/introduction/installation/kubernetes/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/introduction/installation/kubernetes/</guid>
+      <description>These instructions show you how to set up iter8 on Kubernetes with Istio.
+Prerequisites  Kubernetes v1.11 or newer. Istio v1.1.5 and newer. Your Istio installation must have at least the istio-pilot as well as telemetry and Prometheus enabled.  Install iter8 on Kubernetes iter8 has two components, iter8_analytics and iter8_controller. To install them, follow the instructions below. For additional considerations when installing iter8 on Red Hat OpenShift, check out these instructions.</description>
+    </item>
+    
+    <item>
+      <title>Iter8 on Red Hat OpenShift</title>
+      <link>/introduction/installation/red-hat/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/introduction/installation/red-hat/</guid>
+      <description>These instructions show you how to set up iter8 on Red Hat OpenShift.
+Prerequisites We recommend using the Red Hat OpenShift Service Mesh. This can be installed using the Red Hat OpenShift Service Mesh Operator. For details, see: https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_install/installing-ossm.html.
+Installing the Service Mesh involves installing the Elasticsearch, Jaeger, Kiali and Red Hat OpenShift Service Mesh Operators, creating and managing a ServiceMeshControlPlane resource to deploy the control plane, and creating a ServiceMeshMemberRoll resource to specify the namespaces associated with the Red Hat OpenShift Service Mesh.</description>
+    </item>
+    
+    <item>
+      <title>Iter8&#39;s metrics</title>
+      <link>/reference/metrics/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/reference/metrics/</guid>
+      <description>This document describes iter8&amp;rsquo;s out-of-the-box metrics, the anatomy of a metric definition, and how users can define their own metrics.
+Metrics defined by iter8 By default, iter8 leverages the metrics collected by Istio telemetry and stored in Prometheus. Users relying on iter8&amp;rsquo;s out-of-the-box metrics can simply reference them in the success criteria of an experiment specification, as shown in the Experiment CRD documentation.
+During an experiment, for every call made from iter8-controller to iter8-analytics, the latter in turn calls Prometheus to retrieve values of the metrics referenced by the Kubernetes experiment resource.</description>
+    </item>
+    
+    <item>
+      <title>Automated Canary Rollout Using Services</title>
+      <link>/tutorials/services/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/tutorials/services/</guid>
+      <description>In iter8 the versions of a service being compared can be specified using deployment names or using service names. Other tutorials showed how to specify different versions using Kubernetes deployment names. In this tutorial, we learn how to do a canary rollout of an application when different versions are indicated by different Kubernetes service names.
+In this tutorial, we again consider the user facing service productpage of the bookinfo application and we learn how to create an iter8 Experiment that specifies the baseline and candidate versions using Kubernetes services.</description>
+    </item>
+    
+    <item>
+      <title>Iter8&#39;s experiment CRD</title>
+      <link>/reference/experiment/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/reference/experiment/</guid>
+      <description>When iter8 is installed, a new Kubernetes CRD is added to your cluster. Our CRD kind and current API version are as follows:
+apiVersion: iter8.tools/v1alpha1 kind: Experiment Below we document iter8&amp;rsquo;s Experiment CRD. For clarity, we break the documentation down into the CRD&amp;rsquo;s 4 sections: spec, action, metrics, and status.
+Experiment spec Following the Kubernetes model, the spec section specifies the details of the object and its desired state. The spec of an Experiment custom resource identifies the target service of a candidate release or A/B test, the baseline deployment corresponding to the stable service version, the candidate deployment corresponding to the service version being assessed, etc.</description>
+    </item>
+    
+    <item>
+      <title>Iter8&#39;s algorithms</title>
+      <link>/reference/algorithms/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/reference/algorithms/</guid>
+      <description>This documentation briefly describes the algorithms supported by iter8 to make decisions during canary releases or A/B testing. These algorithms are part of iter8&amp;rsquo;s analytics service (iter8-analytics) and exposed via REST API. Iter8&amp;rsquo;s Kubernetes controller (iter8-controller) calls the appropriate REST API based on the .spec.trafficControl.strategy set in a custom Experiment resource. Iter8&amp;rsquo;s Experiment CRD is documented here.
+Iter8&amp;rsquo;s algorithms are statistically robust. Below, we list the algorithms currently available to users.</description>
+    </item>
     
   </channel>
 </rss>

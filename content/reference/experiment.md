@@ -3,6 +3,7 @@ date: 2016-04-09T16:50:16+02:00
 menuTitle: Experiment
 title: Iter8's experiment CRD
 weight: 20
+summary: A new Kubernetes CRD that compares baseline and candidate deployments
 ---
 
 When iter8 is installed, a new Kubernetes CRD is added to your cluster. Our CRD kind and current API version are as follows:

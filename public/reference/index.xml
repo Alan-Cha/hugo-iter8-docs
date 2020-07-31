@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reference on Robust analytics and control to unleash cloud-native continuous experimentation. </title>
+    <title>Reference on iter8 Documentation</title>
     <link>/reference/</link>
-    <description>Recent content in Reference on Robust analytics and control to unleash cloud-native continuous experimentation. </description>
+    <description>Recent content in Reference on iter8 Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate>
     
 	<atom:link href="/reference/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Iter8&#39;s metrics</title>
+      <link>/reference/metrics/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/reference/metrics/</guid>
+      <description>This document describes iter8&amp;rsquo;s out-of-the-box metrics, the anatomy of a metric definition, and how users can define their own metrics.
+Metrics defined by iter8 By default, iter8 leverages the metrics collected by Istio telemetry and stored in Prometheus. Users relying on iter8&amp;rsquo;s out-of-the-box metrics can simply reference them in the success criteria of an experiment specification, as shown in the Experiment CRD documentation.
+During an experiment, for every call made from iter8-controller to iter8-analytics, the latter in turn calls Prometheus to retrieve values of the metrics referenced by the Kubernetes experiment resource.</description>
+    </item>
+    
+    <item>
+      <title>Iter8&#39;s experiment CRD</title>
+      <link>/reference/experiment/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/reference/experiment/</guid>
+      <description>When iter8 is installed, a new Kubernetes CRD is added to your cluster. Our CRD kind and current API version are as follows:
+apiVersion: iter8.tools/v1alpha1 kind: Experiment Below we document iter8&amp;rsquo;s Experiment CRD. For clarity, we break the documentation down into the CRD&amp;rsquo;s 4 sections: spec, action, metrics, and status.
+Experiment spec Following the Kubernetes model, the spec section specifies the details of the object and its desired state. The spec of an Experiment custom resource identifies the target service of a candidate release or A/B test, the baseline deployment corresponding to the stable service version, the candidate deployment corresponding to the service version being assessed, etc.</description>
+    </item>
+    
+    <item>
+      <title>Iter8&#39;s algorithms</title>
+      <link>/reference/algorithms/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/reference/algorithms/</guid>
+      <description>This documentation briefly describes the algorithms supported by iter8 to make decisions during canary releases or A/B testing. These algorithms are part of iter8&amp;rsquo;s analytics service (iter8-analytics) and exposed via REST API. Iter8&amp;rsquo;s Kubernetes controller (iter8-controller) calls the appropriate REST API based on the .spec.trafficControl.strategy set in a custom Experiment resource. Iter8&amp;rsquo;s Experiment CRD is documented here.
+Iter8&amp;rsquo;s algorithms are statistically robust. Below, we list the algorithms currently available to users.</description>
+    </item>
     
   </channel>
 </rss>

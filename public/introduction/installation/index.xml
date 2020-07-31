@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Installation on Robust analytics and control to unleash cloud-native continuous experimentation. </title>
+    <title>Installation on iter8 Documentation</title>
     <link>/introduction/installation/</link>
-    <description>Recent content in Installation on Robust analytics and control to unleash cloud-native continuous experimentation. </description>
+    <description>Recent content in Installation on iter8 Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate>
     
 	<atom:link href="/introduction/installation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Iter8 on Kubernetes and Istio</title>
+      <link>/introduction/installation/kubernetes/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/introduction/installation/kubernetes/</guid>
+      <description>These instructions show you how to set up iter8 on Kubernetes with Istio.
+Prerequisites  Kubernetes v1.11 or newer. Istio v1.1.5 and newer. Your Istio installation must have at least the istio-pilot as well as telemetry and Prometheus enabled.  Install iter8 on Kubernetes iter8 has two components, iter8_analytics and iter8_controller. To install them, follow the instructions below. For additional considerations when installing iter8 on Red Hat OpenShift, check out these instructions.</description>
+    </item>
+    
+    <item>
+      <title>Iter8 on Red Hat OpenShift</title>
+      <link>/introduction/installation/red-hat/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>/introduction/installation/red-hat/</guid>
+      <description>These instructions show you how to set up iter8 on Red Hat OpenShift.
+Prerequisites We recommend using the Red Hat OpenShift Service Mesh. This can be installed using the Red Hat OpenShift Service Mesh Operator. For details, see: https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_install/installing-ossm.html.
+Installing the Service Mesh involves installing the Elasticsearch, Jaeger, Kiali and Red Hat OpenShift Service Mesh Operators, creating and managing a ServiceMeshControlPlane resource to deploy the control plane, and creating a ServiceMeshMemberRoll resource to specify the namespaces associated with the Red Hat OpenShift Service Mesh.</description>
+    </item>
     
   </channel>
 </rss>
