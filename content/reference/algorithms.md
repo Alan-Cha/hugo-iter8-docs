@@ -1,7 +1,8 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-title: Algorithms
-weight: 3
+menuTitle: Algorithms
+title: Iter8's algorithms
+weight: 30
 ---
 
 This documentation briefly describes the algorithms supported by iter8 to make decisions during canary releases or A/B testing. These algorithms are part of iter8's analytics service (_iter8-analytics_) and exposed via REST API. Iter8's Kubernetes controller (_iter8-controller_) calls the appropriate REST API based on the `.spec.trafficControl.strategy` set in a custom `Experiment` resource. Iter8's `Experiment` CRD is documented [here](iter8_crd.md).

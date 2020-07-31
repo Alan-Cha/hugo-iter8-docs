@@ -1,7 +1,8 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-title: Red Hat OpenShift
-weight: 1
+menuTitle: Red Hat OpenShift
+title: Iter8 on Red Hat OpenShift
+weight: 10
 ---
 
 These instructions show you how to set up iter8 on Red Hat OpenShift.

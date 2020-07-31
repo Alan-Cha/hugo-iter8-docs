@@ -1,10 +1,9 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-title: Deployments
-weight: 1
+menuTitle: Deployments
+title: Automated canary releases with iter8 on Kubernetes and Istio
+weight: 10
 ---
-
-<!-- # Automated canary releases with iter8 on Kubernetes and Istio -->
 
 This tutorial shows you how _iter8_ can be used to perform canary releases by gradually shifting traffic to a canary version of a microservice.
 

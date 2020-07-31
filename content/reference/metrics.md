@@ -1,7 +1,8 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-title: Metrics
-weight: 1
+menuTitle: Metrics
+title: Iter8's metrics
+weight: 10
 ---
 
 This document describes iter8's out-of-the-box metrics, the anatomy of a metric definition, and how users can define their own metrics.

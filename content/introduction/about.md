@@ -1,7 +1,7 @@
 ---
 date: 2016-04-09T16:50:16+02:00
 title: About
-weight: 1
+weight: 10
 ---
 
 ![iter8pic](/images/iter8pic.png)

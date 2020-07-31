@@ -1,13 +1,16 @@
 baseURL = "/"
 languageCode = "en-US"
+defaultContentLanguage = "en"
 
 title = "iter8 Documentation"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
-# See more parameters here: https://learn.netlify.app/en/basics/configuration/
 [params]
+  # hugo-theme-learn specific
+  # See more parameters here: https://learn.netlify.app/en/basics/configuration/
+
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page.
   # Useful to give opportunity to people to create merge request for your doc.
   # See the config.toml file from this documentation site to have an example.
@@ -32,7 +35,30 @@ defaultContentLanguageInSubdir= true
   disableNextPrev = true
 
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "blue"
+  themeVariant = "mine"
+
+  # iter8 specific
+
+  # version number
+  versionNumber = "v0.2.1"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "iter8 Documentation"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "github"
+url = "https://github.com/iter8-tools/iter8"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-slack'></i> Slack workspace"
+identifier = "slack"
+url = "https://join.slack.com/t/iter8-tools/shared_invite/enQtODU0NTczMTQ5NDU4LTJmNGE1OTBhOWI4NzllZGE0ZjdhM2M3MzJlMjcxYjliMTJlM2YxMzQ4OWQ5NGViYTM2MTU4MWRkZTgxNzZiMzg"
+weight = 20

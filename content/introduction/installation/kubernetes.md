@@ -1,7 +1,8 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-title: Kubernetes
-weight: 1
+menuTitle: Kubernetes
+title: Iter8 on Kubernetes and Istio
+weight: 10
 ---
 
 These instructions show you how to set up iter8 on Kubernetes with Istio.
