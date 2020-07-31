@@ -14,7 +14,7 @@ Use iter8's analytics-driven continuous experimentation for reliable and frequen
 
 ### Automate canary releases
 
-![Automate canary releases]({{< resource url="images/iter8-overview.png" >}})
+![Automate canary releases]({{< resource url="/images/iter8-overview.png" >}})
 
 Use advanced statistical algorithms to assess key metrics for your service and progressively shift traffic to the winning release.
 
